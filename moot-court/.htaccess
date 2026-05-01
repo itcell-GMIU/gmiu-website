@@ -1,0 +1,40 @@
+# Prevent direct access to sensitive files
+
+<Files "create_tables.sql">
+Order Allow,Deny
+Deny from all
+</Files>
+
+<FilesMatch "\.log$">
+Order Allow,Deny
+Deny from all
+</FilesMatch>
+
+# Prevent access to config files
+
+<Files "config.php">
+Order Allow,Deny
+Deny from all
+</Files>
+
+# Enable URL rewriting for clean URLs (if needed)
+
+RewriteEngine On
+
+# Prevent access to helpers directory (contains sensitive functions)
+RewriteRule ^helpers/ - [F,L]
+
+# Note: Controllers are accessible but protected by PHP-level security checks
+
+# Redirect old response.php to new handlers
+
+RewriteRule ^payment-config/response\.php$ controllers/payment_success.php [L]
+
+# Security headers
+
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options nosniff
+    Header always set X-Frame-Options DENY
+    Header always set X-XSS-Protection "1; mode=block"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>

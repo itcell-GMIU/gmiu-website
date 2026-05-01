@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+Disallow: /gmiu/admissionprogram.php
+Sitemap: https://gmiu.edu.in/gmiu/website/sitemap.xml

@@ -1,0 +1,63 @@
+.card-gmiu {
+    background-color: #ba2a2a;
+    border-color: #ba2a2a;
+    color: #fff;
+}
+
+.card-gmiu .card-header {
+    /* background-color: #ba2a2a; */
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgb(110, 11, 11) 50%, rgb(110, 11, 11) 100%);
+    border-color: #8f1b1b;
+    border: 1px solid white;
+}
+
+.card-gmiu .card-footer {
+    background-color: #f0f0f0;
+}
+
+.card-gmiu .card-body {
+    background-color: #fff;
+    color: #000000;
+}
+
+.card-gmiu .card-title {
+    color: #fff;
+}
+
+.card-gmiu .card-text {
+    color: #fff;
+}
+
+.breadcrumb .breadcrumb-item a {
+    color: #ba2a2a;
+}
+
+.gmiu-admin-footer strong a {
+    color: #ba2a2a;
+}
+
+.swal-modal {
+    backdrop-filter: blur(21px) saturate(200%) !important;
+    -webkit-backdrop-filter: blur(21px) saturate(200%) !important;
+    background-color: rgba(78, 78, 78, 0.22) !important;
+    border-radius: 12px !important;
+    border: 1px solid rgba(255, 255, 255, 0.125) !important;
+    color: white !important;
+}
+.swal-title{
+    color: white;
+}
+.swal-button--confirm{
+    background-color: transparent;
+    border: 1px solid white;
+}
+.swal-button :hover{
+    background-color: #03206c !important;
+    
+}
+.swal-icon--success:after, .swal-icon--success:before{
+    display: none;
+}
+.swal-icon--success__hide-corners{
+    background-color: transparent;
+}

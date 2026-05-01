@@ -1,0 +1,230 @@
+/* ====== Base & Print Setup (Times New Roman, A4) ====== */
+:root {
+  --font-family: "Times New Roman", Times, serif;
+  --fs-body: 14pt;
+  /* body text like PDF */
+  --fs-h-univ: 16pt;
+  /* top university line */
+  --fs-h-sub: 16pt;
+  /* institute & exam title */
+  --fs-marks: 14pt;
+  /* marks column font size */
+  --line: 1.25;
+  /* line-height */
+  --gutter: 14px;
+  /* vertical rhythm */
+  --q-gap: 6pt;
+  /* gap after question line */
+  --opt-gap: 6pt;
+  /* gap between options */
+  --page-w: 210mm;
+  --page-h: 297mm;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  font-size: var(--fs-body);
+  line-height: var(--line);
+  background: #fff;
+  color: #000;
+}
+
+.a4 {
+  width: var(--page-w);
+  min-height: var(--page-h);
+  margin: 16px auto;
+  /* center on screen */
+  /* padding: 10mm 14mm 8mm 14mm; */
+  /* padding: 18mm 14mm 12mm 14mm; */
+  /* screen padding close to print margins */
+}
+
+@page {
+  size: A4;
+  margin: 10mm 14mm 5mm 14mm;
+  /* margin: 18mm 14mm 12mm 14mm; */
+  /* top right bottom left */
+}
+
+@media print {
+  body {
+    margin: 0;
+  }
+
+  .a4 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .noprint {
+    display: none !important;
+  }
+}
+
+/* ====== Header ====== */
+.header {
+  text-align: center;
+  margin-bottom: var(--gutter);
+}
+
+.university {
+  font-weight: 700;
+  font-size: var(--fs-h-univ);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.institute,
+.exam-title {
+  font-size: var(--fs-h-sub);
+  margin: 2px 0;
+  font-weight: 700;
+}
+
+/* ====== Meta Grid ====== */
+.meta {
+  width: 100%;
+  font-weight: 700;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-row-gap: 6pt;
+  margin: var(--gutter) 0 var(--gutter);
+  font-size: var(--fs-body);
+}
+
+.meta .left {
+  justify-self: start;
+}
+
+.meta .right {
+  justify-self: end;
+}
+
+/* ====== Instructions ====== */
+/* .instructions {
+            margin: var(--gutter) 0 var(--gutter);
+        } */
+
+.instructions b {
+  display: inline-block;
+  margin-bottom: 4pt;
+}
+
+.instructions ol {
+  margin: 0 0 0 18pt;
+  padding: 0;
+}
+
+.rule {
+  border: 0;
+  height: 1px;
+  /* background: #000; */
+  margin: 8pt 0;
+}
+
+.qrow {
+  display: grid;
+  grid-template-columns: 6% 88% 6%;
+  /* fixed widths */
+  align-items: start;
+  margin: 5pt 0;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.qnum {
+  font-weight: 700;
+  text-align: left;
+  /* left aligned */
+}
+
+.qcol {
+  text-align: left;
+  /* whole 80% content left aligned */
+}
+
+.marks {
+  font-weight: 700;
+  text-align: center;
+  font-size: var(--fs-marks);
+  /* also left aligned */
+  white-space: nowrap;
+}
+
+/* Options styling - indent under question text */
+.options {
+  margin-top: var(--q-gap);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2pt;
+}
+
+.opt {
+  position: relative;
+  padding-left: 18pt;
+  margin-bottom: 2pt;
+  white-space: normal;
+  min-width: 120px;
+  flex: 1 1 auto;
+}
+
+.opt::before {
+  position: absolute;
+  left: 0;
+  content: attr(data-label) ") ";
+  font-weight: 700;
+}
+
+/* Long single-column fallback on small screens only (not print) */
+@media screen and (max-width: 768px) {
+  .a4 {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .options {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ====== Helpers ====== */
+.center {
+  text-align: center;
+}
+
+.spacer-8 {
+  height: 8pt;
+}
+
+.spacer-12 {
+  height: 12pt;
+}
+
+.qheader {
+  font-weight: 700;
+  /* border-bottom: 1px solid #000; */
+  padding-bottom: 2pt;
+  margin-bottom: 4pt;
+}
+
+.qheader .marks {
+  text-align: center;
+  /* keep aligned with marks column */
+}
+
+/* Prevent awkward page breaks in print */
+.avoid-break {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}

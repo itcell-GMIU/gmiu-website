@@ -1,0 +1,12 @@
+ArtsNewsletter.pdf
+CivilNewsletter.pdf
+ECNewsLetter.pdf
+ElectricalNewsLetter.pdf
+filenames.txt
+ITNewsletter.pdf
+LawNewsletter.pdf
+ManagementDepartmentNewsletter.pdf
+MechanicalNewsletter.pdf
+NewsLetterDesign.pdf
+PharmacyNewsletter.pdf
+ScienceNewsletter.pdf

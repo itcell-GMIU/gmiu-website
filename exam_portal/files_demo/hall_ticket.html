@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Receipt</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+
+    <style>
+        /* Custom CSS for Receipt */
+        .receipt-container {
+            /* border: 1px solid #ccc; */
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .logo {
+            /* Add your logo image here */
+            max-width: 95px;
+            margin: 1px;
+        }
+
+        @media print {
+            .print-btn {
+                display: none;
+            }
+        }
+
+        .borderless table {
+            border-top-style: none;
+            border-left-style: none;
+            border-right-style: none;
+            border-bottom-style: none;
+        }
+
+        .table-borderless>tbody>tr>td,
+        .table-borderless>tbody>tr>th,
+        .table-borderless>tfoot>tr>td,
+        .table-borderless>tfoot>tr>th,
+        .table-borderless>thead>tr>td,
+        .table-borderless>thead>tr>th {
+            border: none;
+        }
+
+        .p-h {
+            height: 45px;
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Receipt Container -->
+        <div class="receipt-container">
+            <div class="row">
+                <div class="col-2 text-center border-left border-top border-bottom">
+                    <img src="../../website_assets/images/logo-single.jpg" alt="Logo" class="logo mt-1 mb-1 ml-auto"
+                        style="z-index: 1;">
+                </div>
+                <div class="col-8 text-center border">
+                    <div class="row mt-2">
+                        <h2 class="mx-auto">Gyanmanjari Innovative University</h2>
+                    </div>
+                    <div class="row">
+                        <h4 class="mx-auto">-:: HALL TICKET ::-</h4>
+                    </div>
+                </div>
+                <div class="col-2 border-right border-top border-bottom">
+                    <div class="row h-50">
+                        <h6 class="mx-auto my-auto">Seat Number</h6>
+                    </div>
+                    <div class="row">
+                        <h6 class="mx-auto  my-2">XXXXXXXXXXXX</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2 text-center border-left border-bottom">
+                </div>
+                <div class="col-8 text-center border-bottom p-h" style="justify-content: center;">
+                    <div class="row">
+                        <h5 class="mx-auto">FACULTY OF DESIGN/HOME SCIENCE SUMMER/WINTER-20XX</h5>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="row h-100 border-bottom border-right">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10 text-center border-right  border-left">
+                    <div class="row border-bottom">
+                        <div class="col-2 border-right p-h">
+                            <h6 class="mx-auto">Name :</h6>
+                        </div>
+                        <div class="col-10 p-h">
+                            <h6 class="text-left font-weight-light">Name Of Student</h6>
+                        </div>
+                    </div>
+                    <div class="row border-bottom">
+                        <div class="col-2 border-right p-h">
+                            <h6 class="mx-auto">Enrolnment :</h6>
+                        </div>
+                        <div class="col-4 border-right p-h">
+                            <h6 class="text-left font-weight-light">XXXXXXXXXXXX</h6>
+                        </div>
+                        <div class="col-2 border-right p-h">
+                            <h6 class="mx-auto">Branch :</h6>
+                        </div>
+                        <div class="col-4 p-h">
+                            <h6 class="text-left font-weight-light">XXXXXXXXXXXX</h6>
+                        </div>
+                    </div>
+                    <div class="row border-bottom">
+                        <div class="col-2 border-right p-h">
+                            <h6 class="mx-auto">Institute :</h6>
+                        </div>
+                        <div class="col-10 p-h">
+                            <h6 class="text-left font-weight-light">Code, Name of Institute</h6>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2 border-right p-h">
+                            <h6 class="mx-auto">Center :</h6>
+                        </div>
+                        <div class="col-10 p-h">
+                            <h6 class="text-left font-weight-light">Code, Name of Institute</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 border-right text-center">
+                    <img src="../../website_assets/images/logo-single.jpg" alt="Logo" class="m-1"
+                        style="height: 110px; width: 100%;">
+                    <div class="row border-top">
+                        <img src="../../website_assets/images/logo-single.jpg" alt="Logo" class="m-1"
+                            style="height: 50px; width: 100%;">
+                    </div>
+                </div>
+                <div class="col-12 p-0 text-center">
+                    <table class="table table-bordered w-100 border-collapse ">
+                        <tbody>
+                            <tr>
+                                <td style="width: 126px;">Subject</td>
+                                <td>xxxxxxx</td>
+                                <td>xxxxxxx</td>
+                                <td>xxxxxxx</td>
+                                <td>xxxxxxx</td>
+                                <td>xxxxxxx</td>
+                                <td>xxxxxxx</td>
+                                <td>xxxxxxx</td>
+                            </tr>
+                            <tr>
+                                <td>Date</td>
+                                <td>dd-mm-yyyy</td>
+                                <td>dd-mm-yyyy</td>
+                                <td>dd-mm-yyyy</td>
+                                <td>dd-mm-yyyy</td>
+                                <td>dd-mm-yyyy</td>
+                                <td>dd-mm-yyyy</td>
+                                <td>dd-mm-yyyy</td>
+                            </tr>
+                            <tr>
+                                <td>Time</td>
+                                <td>2:30 PM</td>
+                                <td>2:30 PM</td>
+                                <td>2:30 PM</td>
+                                <td>2:30 PM</td>
+                                <td>2:30 PM</td>
+                                <td>2:30 PM</td>
+                                <td>2:30 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Signature of Invigilator</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-8"></div>
+                <div class="col-4" style="height: 100px; display: flex; align-items: end; justify-content: center;">
+                    <div class="text-center border-top">
+                        Controller Of Examination
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Print Button -->
+        <div class="text-center">
+            <button class="btn btn-primary print-btn" onclick="window.print()">Print Receipt</button>
+        </div>
+    </div>
+
+    <script>
+        // Disable right-click
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        });
+
+        // Disable inspect mode
+        document.onkeydown = function (e) {
+            if (
+                (e.key === 'F12' && e.ctrlKey === true) ||  // Ctrl+Shift+I
+                (e.key === 'U' && e.ctrlKey === true) || (e.key === 'F12' && e.ctrlKey === false)    // Ctrl+U
+            ) {
+                return false;
+            }
+        };
+    </script>
+
+    <script>
+        // Your encryption key - you should keep this secret.
+        var encryptionKey = "YourSecretKey";
+
+        // The file path you want to encrypt
+        var originalPath = "/path/to/your/file.txt";
+
+        // Encrypt the file path
+        var encryptedPath = CryptoJS.AES.encrypt(originalPath, encryptionKey).toString();
+
+        // Display the encrypted file path
+        document.getElementById("encryptedPath").textContent = encryptedPath;
+
+        // To decrypt the path later if needed, you can use:
+        // var decryptedPath = CryptoJS.AES.decrypt(encryptedPath, encryptionKey).toString(CryptoJS.enc.Utf8);
+        // console.log(decryptedPath);
+    </script>
+</body>
+
+</html>

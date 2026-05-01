@@ -1,0 +1,219 @@
+/* Remove unnecessary scrollbar styles */
+#acedemic::-webkit-scrollbar {
+  display: none;
+  /* for Chrome, Safari, and Opera */
+}
+
+* {
+  font-family: "Century Schoolbook", Georgia, serif;
+}
+
+.a4-page {
+  width: 210mm;
+  min-height: 297mm;
+  margin: 20px auto;
+}
+
+.a4-page {
+  margin-top: 0px !important;
+}
+
+.table-responsive {
+  overflow-x: unset !important;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0.5rem 0.5rem;
+  width: 100%;
+  table-layout: flex;
+}
+
+thead {
+  display: table-header-group;
+}
+
+.table th {
+  padding: 0rem;
+}
+
+th,
+td {
+  border: none !important;
+  padding: 0;
+}
+
+.table td {
+  font-size: 16pt;
+  padding: 0rem;
+}
+
+table.dataTable td,
+table.dataTable th {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  vertical-align: top;
+  line-height: 1.7;
+}
+
+/* Prevent header content from breaking into multiple lines */
+.header-info {
+  white-space: nowrap;
+  /* Prevent line breaks */
+}
+
+.custom-line-height {
+  line-height: 1.5;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0rem;
+}
+
+.custome-width-th {
+  width: 50%;
+}
+
+.hidden-row {
+  display: none;
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 1.5cm 1cm 0.5cm 1cm !important; /* top right bottom left */
+    /*margin: 0.5cm 1cm !important;*/
+  }
+
+  body {
+    font-family: "Century Schoolbook", Georgia, serif;
+    font-size: 16pt;
+    padding: 0;
+    margin: 0px !important;
+    line-height: 1.2;
+  }
+
+  .a4-page {
+    all: unset;
+  }
+
+  body {
+    margin: 0;
+    /* overflow-x: hidden;  */
+  }
+
+  /* Prevent header content from breaking into multiple lines */
+  .header-info {
+    white-space: nowrap;
+    /* Prevent line breaks */
+  }
+
+  table thead tr th .ol {
+    margin-bottom: 0px !important;
+  }
+
+  .print-header {
+    display: block;
+    position: fixed;
+    top: 0px !important;
+    width: 100%;
+  }
+
+  .print-header ~ .print-header {
+    display: none;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+
+  tfoot {
+    display: table-footer-group;
+  }
+
+  .container-fluid {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  /* .table {
+    width: 100%;
+    page-break-after: auto;
+  } */
+  table {
+    table-layout: auto !important; /* Instead of flex */
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  .table-responsive {
+    overflow-x: visible !important;
+  }
+  th,
+  td {
+    padding: 2px 4px !important; /* reduce padding to prevent overflow */
+    box-sizing: border-box; /* ensure padding doesn't increase width */
+  }
+
+  body,
+  .a4-page {
+    overflow-x: hidden !important;
+  }
+  .h1,
+  .h4,
+  .th {
+    font-size: 30pt;
+  }
+
+  .custom-line-height {
+    line-height: 1;
+  }
+
+  button {
+    display: none !important;
+  }
+
+  .print-btn,
+  .no-print,
+  .dataTables_wrapper .dt-buttons {
+    display: none !important;
+  }
+
+  #acedemic_wrapper {
+    display: none !important;
+  }
+
+  .a4-page {
+    margin-top: 0px !important;
+  }
+
+  .print-button {
+    display: inline-block;
+    text-align: center;
+    margin-top: 0px !important;
+  }
+
+  /* Make columns 1, 2, 4, 5, and 6 bold */
+  #acedemic td:nth-child(1),
+  #acedemic td:nth-child(2),
+  #acedemic td:nth-child(4),
+  #acedemic td:nth-child(5),
+  #acedemic td:nth-child(6) {
+    font-weight: bold;
+    font-size: 14pt;
+    text-align: center;
+  }
+
+  /* Apply 10px padding to the right side of columns 1 and 2 */
+  #acedemic td:nth-child(1),
+  #acedemic td:nth-child(2),
+  #acedemic td:nth-child(3) {
+    padding-right: 10px;
+  }
+}

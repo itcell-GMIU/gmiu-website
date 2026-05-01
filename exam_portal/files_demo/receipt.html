@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Receipt</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+
+    <style>
+        /* Custom CSS for Receipt */
+        .receipt-container {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .logo {
+            /* Add your logo image here */
+            max-width: 80px;
+        }
+
+        @media print {
+            .print-btn {
+                display: none;
+            }
+        }
+
+        .borderless table {
+            border-top-style: none;
+            border-left-style: none;
+            border-right-style: none;
+            border-bottom-style: none;
+        }
+
+        .table-borderless>tbody>tr>td,
+        .table-borderless>tbody>tr>th,
+        .table-borderless>tfoot>tr>td,
+        .table-borderless>tfoot>tr>th,
+        .table-borderless>thead>tr>td,
+        .table-borderless>thead>tr>th {
+            border: none;
+        }
+
+        .pay-w {
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Receipt Container -->
+        <div class="receipt-container">
+            <!-- Logo and Institute Name -->
+            <div class="row w-100 text-right align-center p-0 m-0">
+                <img src="../../website_assets/images/logo-single.jpg" alt="Logo" class="logo ml-auto">
+                <h2 class="mr-auto">Gyanmanjari Innovative University</h2>
+            </div>
+            <!-- Payment Receipt Header -->
+            <div class="text-center" style="transform: translateY(-40px);">
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Payment Receipt</p>
+            </div>
+            <!-- Faculty Name -->
+            <div class="text-center">
+                <p class="m-1">FACULTY OF ENGINEERING & TECHNOLOGY </p>
+            </div>
+            <div class="text-center">
+                <p>Diploma/B.Tech/M.Tech Sem XYZ Winter/Summer Examination - 20XX</p>
+            </div>
+
+            <table class="table table-bordered text-center">
+                <tbody>
+                    <tr>
+                        <th>Name</th>
+                        <td>Student Name</td>
+                    </tr>
+                    <tr>
+                        <th>Enrolement No.:</th>
+                        <td>XXXXXXXXXXXX</td>
+                    </tr>
+                    <tr>
+                        <th>Branch:</th>
+                        <td>Code, Name of Brach</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Table for Items -->
+            <table class="table table-bordered text-center mt-5">
+                <thead>
+                    <tr>
+                        <th>Code</th>
+                        <th>Subject</th>
+                        <th>Code</th>
+                        <th>Subject</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Item 1</td>
+                        <td>2</td>
+                        <td>$10.00</td>
+                        <td>$20.00</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="text-center mt-4 mb-3">
+                <h5><u>Payment Details</u></h5>
+            </div>
+            <!-- Payment Details -->
+            <table class="table table-borderless text-left">
+                <tbody>
+                    <tr>
+                        <td class="p-0 pay-w">Transaction No:</td>
+                        <td class="p-0">XXXXXXXXXXXX</td>
+                    </tr>
+                    <tr>
+                        <td class="p-0 pay-w">Paid Amount:</td>
+                        <td class="p-0">XXXXXXXXXXXX</td>
+                    </tr>
+                    <tr>
+                        <td class="p-0 pay-w">Transaction Date:</td>
+                        <td class="p-0">DD/MM/YY</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="text-left">
+                <p>Note :</p>
+                <p class="mr-5">Eligible for appearing in exam :
+                    <br>- Subject to student's backlog <=4 excluding immediate
+                    previous semester and other norms. Else form will be cancelled.
+                    <br> - This is student payment receipt,do not submit to institute.Keep it with you for further
+                    reference.
+                    <br> - Before generation of hall-ticket the university will verify all parameters for eligibility to
+                    appear in exam, in case of any dispute, university has rights to cancel the exam form and fee will
+                    refund to your account.
+                    <br> - Examination hall-ticket will distribute from your respected institute only.
+                    <br> - Verify Your details,for any change kindly contact to institute.
+                </p>
+            </div>
+        </div>
+
+        <!-- Print Button -->
+        <div class="text-center">
+            <button class="btn btn-primary print-btn" onclick="window.print()">Print Receipt</button>
+        </div>
+    </div>
+
+    <script>
+        // Disable right-click
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        });
+
+        // Disable inspect mode
+        document.onkeydown = function (e) {
+            if (
+                (e.key === 'F12' && e.ctrlKey === true) ||  // Ctrl+Shift+I
+                (e.key === 'U' && e.ctrlKey === true) || (e.key === 'F12' && e.ctrlKey === false)    // Ctrl+U
+            ) {
+                return false;
+            }
+        };
+    </script>
+
+    <script>
+        // Your encryption key - you should keep this secret.
+        var encryptionKey = "YourSecretKey";
+
+        // The file path you want to encrypt
+        var originalPath = "/path/to/your/file.txt";
+
+        // Encrypt the file path
+        var encryptedPath = CryptoJS.AES.encrypt(originalPath, encryptionKey).toString();
+
+        // Display the encrypted file path
+        document.getElementById("encryptedPath").textContent = encryptedPath;
+
+        // To decrypt the path later if needed, you can use:
+        // var decryptedPath = CryptoJS.AES.decrypt(encryptedPath, encryptionKey).toString(CryptoJS.enc.Utf8);
+        // console.log(decryptedPath);
+    </script>
+</body>
+
+</html>

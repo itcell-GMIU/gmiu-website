@@ -1,0 +1,33 @@
+RewriteEngine On
+RewriteBase /gmiu/website/faculty/
+
+
+# Rewrite rule for programs list by level (e.g., /faculty/ug)
+RewriteRule ^(ug|pg|diploma|phd|pgd|cc|ug-min|ug-d2d|dip-c2d|ug-dd|ug\+pg|minor|ug-hon|ug-premium)/?$ programs_list.php?level_short=$1 [L,QSA,NC]
+
+# Rewrite rule for programs list by level and faculty (e.g., /faculty/diploma/foe)
+RewriteRule ^(ug|pg|diploma|phd|pgd|cc|ug-min|ug-d2d|dip-c2d|ug-dd|ug\+pg|minor|ug-hon|ug-premium)/([a-zA-Z0-9-]+)/?$ programs_list.php?level_short=$1&faculty_slug=$2 [L,QSA,NC]
+
+# Rewrite rule for faculty page with a slug
+RewriteRule ^([a-zA-Z0-9-]+)$ faculty.php?faculty_slug=$1 [L,QSA]
+RewriteRule ^([a-zA-Z0-9-]+)/([a-zA-Z0-9-]+)/?$ program.php?faculty_slug=$1&program_slug=$2 [L,QSA]
+RewriteRule ^([a-zA-Z0-9-]+)/([a-zA-Z0-9-]+)/program-mission-vision/?$ program_mission_vision.php?faculty_slug=$1&program_slug=$2 [L,QSA]
+RewriteRule ^([a-zA-Z0-9-]+)/([a-zA-Z0-9-]+)/student-corner/?$ student_corner.php?faculty_slug=$1&program_slug=$2 [L,QSA]
+RewriteRule ^([a-zA-Z0-9-]+)/([a-zA-Z0-9-]+)/program-faculty/?$ program_faculty.php?faculty_slug=$1&program_slug=$2 [L,QSA]
+RewriteRule ^([a-zA-Z0-9-]+)/([a-zA-Z0-9-]+)/program-outcome/?$ program_outcome.php?faculty_slug=$1&program_slug=$2 [L,QSA]
+RewriteRule ^([a-zA-Z0-9-]+)/([a-zA-Z0-9-]+)/program-laboratories/?$ program_laboratories.php?faculty_slug=$1&program_slug=$2 [L,QSA]
+RewriteRule ^([a-zA-Z0-9-]+)/([a-zA-Z0-9-]+)/program-expert-talk/?$ program_expert_talk.php?faculty_slug=$1&program_slug=$2 [L,QSA]
+RewriteRule ^([a-zA-Z0-9-]+)/([a-zA-Z0-9-]+)/program-industry-visit/?$ program_industry_visit.php?faculty_slug=$1&program_slug=$2 [L,QSA]
+RewriteRule ^([a-zA-Z0-9-]+)/([a-zA-Z0-9-]+)/program-workshop/?$ program_workshop.php?faculty_slug=$1&program_slug=$2 [L,QSA]
+RewriteRule ^([a-zA-Z0-9-]+)/([a-zA-Z0-9-]+)/program-sdp/?$ program_sdp.php?faculty_slug=$1&program_slug=$2 [L,QSA]
+RewriteRule ^([a-zA-Z0-9-]+)/([a-zA-Z0-9-]+)/sdp/?$ sdp.php?faculty_slug=$1&program_slug=$2 [L,QSA]
+RewriteRule ^([a-zA-Z0-9-]+)/([a-zA-Z0-9-]+)/program-extra-curricular-activity/?$ program_extra_curricular_activity.php?faculty_slug=$1&program_slug=$2 [L,QSA]
+RewriteRule ^([a-zA-Z0-9-]+)/([a-zA-Z0-9-]+)/program-achievement/?$ program_achievement.php?faculty_slug=$1&program_slug=$2 [L,QSA]
+RewriteRule ^([a-zA-Z0-9-]+)/([a-zA-Z0-9-]+)/program-our-project/?$ program_our_project.php?faculty_slug=$1&program_slug=$2 [L,QSA]
+RewriteRule ^([a-zA-Z0-9-]+)/([a-zA-Z0-9-]+)/placement/?$ placement.php?faculty_slug=$1&program_slug=$2 [L,QSA]
+
+RewriteRule ^([a-zA-Z0-9-]+)/([a-zA-Z0-9-]+)/program_faculty/([a-zA-Z0-9-]+)/?$ program_faculty_profile.php?faculty_slug=$1&program_slug=$2&member_slug=$3 [L,QSA]
+
+# Optional: Redirect old URLs with query string to the new slug-based URL
+RewriteCond %{QUERY_STRING} ^id=([0-9]+)$
+RewriteRule ^faculty/faculty.php$ /gmiu/website/faculty/%1? [R=301,L]

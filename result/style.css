@@ -1,0 +1,481 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ header .logo {
+     height: 100px;
+     display: flex;
+     justify-content: center;
+     margin: 30px auto;
+ }
+
+ header .heading {
+     display: flex;
+     justify-content: center;
+ }
+
+ main {
+     margin-top: 10px;
+ }
+
+ main table {
+     border-collapse: collapse;
+     margin: auto;
+     width: 74%;
+ }
+
+ main table thead th {
+     background-color: skyblue;
+ }
+
+ main table thead tr th {
+     border: 1px solid black;
+     padding: 10px 20px;
+ }
+
+ main table tbody tr td {
+     text-align: center;
+     border: 1px solid black;
+     padding: 7px 20px;
+ }
+
+ .tb-2 {
+     justify-content: center;
+     margin: 10px auto;
+ }
+
+ .gmit {
+     background-color: #fff;
+ }
+
+ .no-border {
+     border: none;
+ }
+
+ .tbb {
+     border: 1px solid black;
+ }
+
+ table .border {
+     border: 1px solid black;
+ }
+
+ @media screen and (max-width:840px) {
+     header .logo {
+         height: 80px;
+         display: flex;
+         justify-content: center;
+         margin: 25px auto;
+     }
+
+     header .heading {
+         display: flex;
+         justify-content: center;
+         font-size: 13px;
+     }
+
+     main table {
+         border-collapse: collapse;
+         margin: auto;
+         width: 72%;
+     }
+
+     main table thead tr th {
+         border: 1px solid black;
+         padding: 7px 15px;
+     }
+
+     main table tbody tr td {
+         text-align: center;
+         border: 1px solid black;
+         padding: 5px 15px;
+     }
+
+     .tb-2 {
+         justify-content: center;
+         margin: 10px auto;
+     }
+
+     .tb-4 {
+         width: 500px;
+     }
+
+     .tb-4-th {
+         font-size: 14px;
+         padding: 4px 13px;
+     }
+
+     .tb-5 {
+         width: 500px;
+     }
+
+     .tb-5-th {
+         font-size: 12px;
+         padding: 2px 0px;
+     }
+
+     main .tb-5 thead .tb-5-th th {
+         border: 1px solid black;
+         padding: 0px 0px;
+     }
+
+     .tb-6 {
+         width: 500px;
+     }
+
+     .tb-6-th {
+         font-size: 12px;
+         padding: 2px 0px;
+     }
+
+     main .tb-6 .tb-6-th th {
+         border: 1px solid black;
+         padding: 5px 2px;
+     }
+
+     .tb-7 {
+         width: 500px;
+     }
+
+     .tb-7-th {
+         font-size: 12px;
+         padding: 2px 0px;
+     }
+
+     main .tb-7 .tb-7-th th {
+         border: 1px solid black;
+         padding: 5px 2px;
+     }
+
+ }
+
+ @media print {
+     * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+     }
+
+     .print-btn,
+     #print-btn {
+         display: none !important;
+     }
+
+     header .logo {
+         height: 100px;
+         display: flex;
+         justify-content: center;
+         margin: 30px auto;
+     }
+
+     header .heading {
+         display: flex;
+         justify-content: center;
+     }
+
+     main {
+         margin-top: 10px;
+     }
+
+     main table {
+         border-collapse: collapse;
+         margin: auto;
+         width: 72%;
+     }
+
+     main table thead th {
+         background-color: skyblue;
+     }
+
+     main table thead tr th {
+         border: 1px solid black;
+         padding: 10px 20px;
+     }
+
+     main table tbody tr td {
+         text-align: center;
+         border: 1px solid black;
+         padding: 7px 20px;
+     }
+
+     .tb-2 {
+         justify-content: center;
+         margin: 10px auto;
+     }
+
+     .gmit {
+         background-color: #fff;
+     }
+
+     .no-border {
+         border: none;
+     }
+
+     .tbb {
+         border: 1px solid black;
+     }
+
+     table .border {
+         border: 1px solid black;
+     }
+
+     .print-btn {
+         display: none;
+     }
+
+ }
+
+ /* below css id taken from the chat gpt */
+ /* ... Existing styles ... */
+
+ /* Additional responsive styles for other elements */
+ @media screen and (max-width: 600px) {
+     main {
+         padding: 10px;
+     }
+
+     .logo img {
+         max-width: 100%;
+         height: auto;
+     }
+ }
+
+ /* Print Styles */
+ @media print {
+
+     tbody,
+     thead,
+     th,
+     td {
+         border: 1px solid black !important;
+     }
+
+     * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+     }
+
+     header .logo {
+         height: 100px;
+         display: flex;
+         justify-content: center;
+         margin: 30px auto;
+     }
+
+     header .heading {
+         display: flex;
+         justify-content: center;
+     }
+
+     main {
+         margin-top: 10px;
+     }
+
+     main table {
+         border-collapse: collapse;
+         margin: auto;
+         width: 100%;
+         /* Use full width for printing */
+     }
+
+     main table thead th {
+         background-color: skyblue;
+     }
+
+     main table thead tr th {
+         border: 1px solid black;
+         padding: 10px 20px;
+     }
+
+     main table tbody tr td {
+         text-align: center;
+         border: 1px solid black;
+         padding: 7px 20px;
+     }
+
+     .tb-2 {
+         justify-content: center;
+         margin: 10px auto;
+     }
+
+     .gmit {
+         background-color: #fff;
+     }
+
+     .no-border {
+         border: none;
+     }
+
+     .tbb {
+         border: 1px solid black;
+     }
+
+     table .border {
+         border: 1px solid black;
+     }
+
+     .print-btn {
+         display: none;
+     }
+
+     /* Adjustments for smaller font size in print */
+     main table thead tr th,
+     main table tbody tr td {
+         font-size: 12px;
+     }
+
+     /* ... Additional adjustments for other elements ... */
+ }
+
+ /* above css id taken from the chat gpt */
+
+ @media screen and (max-width:400px) {
+     header .logo {
+         height: 40px;
+         display: flex;
+         justify-content: center;
+         margin: 25px auto;
+     }
+
+     header .heading {
+         display: flex;
+         justify-content: center;
+         font-size: 11px;
+     }
+
+     main table {
+         border-collapse: collapse;
+         margin: auto;
+         width: 90%;
+     }
+
+     main table thead tr th {
+         border: 1px solid black;
+         padding: 3px 10px;
+         font-size: 10px;
+     }
+
+     main table tbody tr td {
+         text-align: center;
+         border: 1px solid black;
+         padding: 5px 15px;
+         font-size: 10px;
+     }
+
+     .tb-2 {
+         justify-content: center;
+         margin: 10px auto;
+     }
+
+     .tb-4 {
+         width: 90%;
+     }
+
+     .tb-4-th {
+         font-size: 14px;
+         padding: 4px 13px;
+     }
+
+     .tb-5 {
+         width: 90%;
+     }
+
+     .tb-5-th {
+         font-size: 8px;
+     }
+
+     main .tb-5 thead .tb-5-th th {
+         border: 1px solid black;
+         padding: 0px;
+         font-size: 8px;
+     }
+
+     main .tb-5 thead .tb-5-th td {
+         border: 1px solid black;
+         padding: 0px;
+         font-size: 8px;
+     }
+
+     .tb-6 {
+         width: 90%;
+     }
+
+     .tb-6-th {
+         font-size: 8px;
+         padding: 2px 0px;
+     }
+
+     main .tb-6 .tb-6-th th {
+         border: 1px solid black;
+         font-size: 8px;
+     }
+
+     main .tb-6 .tb-6-th tr {
+         border: 1px solid black;
+         font-size: 8px;
+     }
+
+     .tb-7 {
+         width: 90%;
+     }
+
+     .tb-7-th {
+         font-size: 8px;
+     }
+
+     main .tb-7 .tb-7-th th {
+         border: 1px solid black;
+         font-size: 8px;
+         padding: 4px 0px;
+     }
+
+     main .tb-7 .tb-7-th td {
+         border: 1px solid black;
+         font-size: 8px;
+
+     }
+
+     main table tbody tr td {
+         text-align: center;
+         border: 1px solid black;
+         padding: 0px 0px;
+         font-size: 8px;
+     }
+
+ }
+
+ /* below css is for the button  */
+ /* Add these styles for centering the button and improving its appearance */
+ .text-center {
+     text-align: center;
+ }
+
+ .btn {
+     display: inline-block;
+     padding: 10px 20px;
+     margin-top: 20px;
+     font-size: 16px;
+     font-weight: bold;
+     text-align: center;
+     text-decoration: none;
+     cursor: pointer;
+     border: none;
+     border-radius: 5px;
+     color: #fff;
+ }
+
+ .btn-primary {
+     background-color: #007bff;
+ }
+
+ /* Add hover effect */
+ .btn:hover {
+     background-color: #0056b3;
+ }
+
+.capitalized{
+    text-transform: capitalize !important;
+ }

@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /gmiu/website_admin/
+Disallow: /gmiu/website_admin/uploads/
+Disallow: /gmiu/website_admin/uploads/expert_talk/
+Disallow: /gmiu/website_admin/uploads/ssports/
+Disallow: /gmiu/website_admin/uploads/faculty_brochure/

@@ -1,0 +1,26 @@
+/* select 2 option css  */
+/* CSS FIX FOR SELECT2 WRAPPING & STYLING */
+.select2-container .select-selection--multiple {
+  box-sizing: border-box;
+  /* Ensures padding and border are included in the element's total width and height */
+}
+
+.form-group .select2-container--default .select2-selection--multiple {
+  /* Match the border and size of your template's form inputs */
+  border: 1px solid #ced4da !important;
+  min-height: 38px !important;
+  width: 100% !important;
+}
+
+.select2-selection--multiple {
+  /* This is the key: it allows the container to grow vertically */
+  height: auto !important;
+  overflow: hidden !important;
+  /* Prevents scrollbars from appearing */
+}
+
+.select2-selection__choice {
+  /* Adds a little space between the selected items */
+  margin-top: 4px !important;
+  color: black !important;
+}

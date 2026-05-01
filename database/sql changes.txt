@@ -1,0 +1,71 @@
+04-03-23-jainam
+CREATE DATABASE gmiu / DROP DATABASE giu
+
+06-03-23-jainam
+ALTER TABLE `tbl_admission_student` ADD `dob` DATE NULL DEFAULT NULL AFTER `mobile_number`, ADD `gender` VARCHAR(255) NULL DEFAULT '' AFTER `dob`, ADD `blood_group` VARCHAR(255) NULL DEFAULT '' AFTER `gender`, ADD `religion` VARCHAR(255) NOT NULL DEFAULT '' AFTER `blood_group`, ADD `caste` VARCHAR(255) NOT NULL DEFAULT '' AFTER `religion`, ADD `father_name` VARCHAR(255) NOT NULL DEFAULT '' AFTER `caste`;
+
+ALTER TABLE `tbl_admission_student` ADD `mother_name` VARCHAR(255) NOT NULL DEFAULT '' AFTER `father_name`, ADD `father_occupation` VARCHAR(255) NOT NULL DEFAULT '' AFTER `mother_name`, ADD `mother_occupation` VARCHAR(255) NOT NULL DEFAULT '' AFTER `father_occupation`, ADD `father_mobile_number` VARCHAR(255) NOT NULL DEFAULT '' AFTER `mother_occupation`;
+
+ALTER TABLE `tbl_admission_student` ADD `father_email_id` VARCHAR(255) NOT NULL DEFAULT '' AFTER `father_mobile_number`, ADD `adhar_number` VARCHAR(255) NOT NULL DEFAULT '' AFTER `father_email_id`, ADD `address` VARCHAR(255) NOT NULL DEFAULT '' AFTER `adhar_number`;
+ALTER TABLE `tbl_role` CHANGE `created_by` `created_by` BIGINT NULL DEFAULT NULL;
+
+ALTER TABLE `tbl_role` CHANGE `updated_by` `updated_by` BIGINT NULL DEFAULT NULL;
+
+07-03-2023-shruti
+INSERT INTO `tbl_level` (`id`, `name`, `is_active`, `is_delete`, `created_at`, `updated_at`, `created_by`, `updated_by`) VALUES (NULL, 'dfdf', '1', '0', current_timestamp(), current_timestamp(), NULL, NULL);
+
+
+27-03-2023-shruti
+UPDATE `tbl_program` SET `token`=10000 WHERE `faculty_id`=1 AND `level_id`=1 ;
+
+UPDATE `tbl_program` SET `token`=10000 WHERE `faculty_id`=1 AND `level_id`=2;
+
+UPDATE `tbl_program` SET `token`=5000 WHERE `faculty_id`=1 AND `level_id`=5;
+
+UPDATE `tbl_program` SET `token`=2000 WHERE `faculty_id`=1 AND `level_id`=3;
+
+UPDATE `tbl_program` SET `token`=10000 WHERE `faculty_id`=3 AND `level_id`=1;
+
+UPDATE `tbl_program` SET `token`=5000 WHERE `faculty_id`=3 AND `level_id`=2;
+
+UPDATE `tbl_program` SET `token`=5000 WHERE `faculty_id`=4 AND `level_id`=2;
+
+UPDATE `tbl_program` SET `token`=10000 WHERE `faculty_id`=4 AND `level_id`=1;
+
+UPDATE `tbl_program` SET `token`=5000 WHERE `faculty_id`=5 AND `level_id`=1;
+
+UPDATE `tbl_program` SET `token`=10000 WHERE `faculty_id`=5 AND `level_id`=2;
+
+UPDATE `tbl_program` SET `token`=10000 WHERE `faculty_id`=6 AND `level_id`=2;
+
+UPDATE `tbl_program` SET `token`=5000 WHERE `faculty_id`=6 AND `level_id`=1;
+
+UPDATE `tbl_program` SET `token`=5000 WHERE `faculty_id`=8 AND `level_id`=1;
+
+UPDATE `tbl_program` SET `token`=10000 WHERE `faculty_id`=8 AND `level_id`=2;
+
+UPDATE `tbl_program` SET `token`=5000 WHERE `faculty_id`=11 AND `level_id`=7;
+
+UPDATE `tbl_program` SET `token`=5000 WHERE `faculty_id`=12 AND `level_id`=1;
+
+UPDATE `tbl_program` SET `token`=10000 WHERE `faculty_id`=12 AND `level_id`=2;
+
+UPDATE `tbl_program` SET `token`=5000 WHERE `faculty_id`=14 AND `level_id`=2;
+
+UPDATE `tbl_program` SET `token`=5000 WHERE `faculty_id`=15 AND `level_id`=5;
+
+UPDATE `tbl_program` SET `token`=10000 WHERE `faculty_id`=15 AND `level_id`=1;
+
+UPDATE `tbl_program` SET `token`=2000 WHERE `faculty_id`=16 AND `level_id`=6;
+
+UPDATE `tbl_program` SET `token`=10000 WHERE `faculty_id`=18 AND `level_id`=8;
+
+
+28-03-2023
+CREATE TABLE `gmiu`.`tbl_admin` (`id` INT NOT NULL , `name` VARCHAR(255) NULL DEFAULT NULL , `email` VARCHAR(255) NULL DEFAULT NULL , `username` VARCHAR(255) NOT NULL , `password` VARCHAR(255) NOT NULL , `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , `updated_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , `is_active` TINYINT NOT NULL DEFAULT '1' , `is_delete` TINYINT NOT NULL DEFAULT '0' ) ENGINE = InnoDB;
+ALTER TABLE `tbl_admin` CHANGE `id` `id` INT(11) NOT NULL AUTO_INCREMENT, add PRIMARY KEY (`id`);
+INSERT INTO `tbl_admin` (`id`, `name`, `email`, `username`, `password`, `created_at`, `updated_at`, `is_active`, `is_delete`) VALUES (NULL, 'admin', 'admin@gmiu.edu.in', 'admin', 'admin@gmiu', current_timestamp(), current_timestamp(), '1', '0');
+
+
+-4-4-23
+ALTER TABLE `tbl_student_document` ADD `parent_aadharcard` VARCHAR(255) NULL DEFAULT NULL AFTER `aadharcard`;

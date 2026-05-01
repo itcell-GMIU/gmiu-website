@@ -1,0 +1,119 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mySwiper .swiper-slide {
+    opacity: 1;
+}
+
+.swiper-wrapper {
+    margin-bottom: 22px;
+}
+
+.card-std {
+    display: inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    /* width: 180px; */
+    height: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    margin: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+.container-std .comp-std {
+    margin: 0 auto;
+    width: 126px;
+}
+
+.swiper-pagination-bullet {
+    background-color: #ba2a21;
+}
+
+#font-course {
+    font-size: 18.6px;
+}
+
+.gradText {
+    color: #fff;
+    font-size: 22.5px;
+}
+
+.curriculum-text-box .curriculum-section .panel-group .panel .panel-title {
+    padding: 0px 18px;
+}
+
+.gradText-sub {
+    font-size: 17.4px;
+    font-family: 'Nunito', sans-serif;
+    color: #ba2a21;
+    /* background: linear-gradient(130deg,#ba2a21 0%,#ba2a21 100%) !important; */
+    -webkit-background-clip: text;
+    background-clip: text;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.red-background {
+    padding-bottom: 16px;
+    background: #ba2a21;
+    padding-left: 18px;
+    padding-top: 1px;
+    /* border-radius: 5px; */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.table-card-placement {
+    border-radius: 5px;
+    box-shadow: 0 0 10px #00000021;
+    margin-top: 45px;
+}
+
+.curriculum-text-box .curriculum-section .panel-group .panel+.panel {
+    margin: 0;
+}
+
+.color-gmiu {
+    color: #727272 !important;
+}
+
+.curriculum-text-box .curriculum-section .panel-group .panel .panel-title a:before {
+    color: #727272;
+}
+.curriculum-text-box .curriculum-section .panel-group .panel-default {
+    border-bottom: 1px solid #d6d5d512;
+}
+
+.curriculum-text-box .curriculum-section .panel-group .panel .panel-heading{
+    /* background: rgb(186 42 33 / 6%); */
+}
+
+.if-even-bg{
+    background: rgb(186 42 33 / 6%) !important;
+}
+
+.sidebar-content {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 153px !important;
+}

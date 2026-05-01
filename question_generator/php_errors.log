@@ -1,0 +1,27 @@
+[23-Apr-2025 06:15:56 UTC] PHP Warning:  min(): Array must contain at least one element in /home/u977112581/domains/gmiu.edu.in/public_html/gmiu/question_generator/fetch_questions.php on line 94
+[23-Apr-2025 06:15:56 UTC] PHP Notice:  Undefined variable: subtractedValue1 in /home/u977112581/domains/gmiu.edu.in/public_html/gmiu/question_generator/fetch_questions.php on line 204
+[23-Apr-2025 06:15:56 UTC] PHP Warning:  array_diff(): Expected parameter 1 to be an array, null given in /home/u977112581/domains/gmiu.edu.in/public_html/gmiu/question_generator/fetch_questions.php on line 204
+[23-Apr-2025 06:15:56 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/u977112581/domains/gmiu.edu.in/public_html/gmiu/question_generator/fetch_questions.php on line 204
+[23-Apr-2025 06:15:56 UTC] PHP Warning:  min(): When only one parameter is given, it must be an array in /home/u977112581/domains/gmiu.edu.in/public_html/gmiu/question_generator/fetch_questions.php on line 204
+[23-Apr-2025 06:15:56 UTC] PHP Fatal error:  Uncaught DivisionByZeroError: Modulo by zero in /home/u977112581/domains/gmiu.edu.in/public_html/gmiu/question_generator/fetch_questions.php:267
+Stack trace:
+#0 {main}
+  thrown in /home/u977112581/domains/gmiu.edu.in/public_html/gmiu/question_generator/fetch_questions.php on line 267
+[23-Apr-2025 06:15:56 UTC] PHP Warning:  min(): Array must contain at least one element in /home/u977112581/domains/gmiu.edu.in/public_html/gmiu/question_generator/fetch_questions.php on line 94
+[23-Apr-2025 06:15:56 UTC] PHP Notice:  Undefined variable: subtractedValue1 in /home/u977112581/domains/gmiu.edu.in/public_html/gmiu/question_generator/fetch_questions.php on line 204
+[23-Apr-2025 06:15:56 UTC] PHP Warning:  array_diff(): Expected parameter 1 to be an array, null given in /home/u977112581/domains/gmiu.edu.in/public_html/gmiu/question_generator/fetch_questions.php on line 204
+[23-Apr-2025 06:15:56 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/u977112581/domains/gmiu.edu.in/public_html/gmiu/question_generator/fetch_questions.php on line 204
+[23-Apr-2025 06:15:56 UTC] PHP Warning:  min(): When only one parameter is given, it must be an array in /home/u977112581/domains/gmiu.edu.in/public_html/gmiu/question_generator/fetch_questions.php on line 204
+[23-Apr-2025 06:15:56 UTC] PHP Fatal error:  Uncaught DivisionByZeroError: Modulo by zero in /home/u977112581/domains/gmiu.edu.in/public_html/gmiu/question_generator/fetch_questions.php:267
+Stack trace:
+#0 {main}
+  thrown in /home/u977112581/domains/gmiu.edu.in/public_html/gmiu/question_generator/fetch_questions.php on line 267
+[23-Apr-2025 06:17:11 UTC] PHP Warning:  min(): Array must contain at least one element in /home/u977112581/domains/gmiu.edu.in/public_html/gmiu/question_generator/fetch_questions.php on line 94
+[23-Apr-2025 06:17:11 UTC] PHP Notice:  Undefined variable: subtractedValue1 in /home/u977112581/domains/gmiu.edu.in/public_html/gmiu/question_generator/fetch_questions.php on line 204
+[23-Apr-2025 06:17:11 UTC] PHP Warning:  array_diff(): Expected parameter 1 to be an array, null given in /home/u977112581/domains/gmiu.edu.in/public_html/gmiu/question_generator/fetch_questions.php on line 204
+[23-Apr-2025 06:17:11 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/u977112581/domains/gmiu.edu.in/public_html/gmiu/question_generator/fetch_questions.php on line 204
+[23-Apr-2025 06:17:11 UTC] PHP Warning:  min(): When only one parameter is given, it must be an array in /home/u977112581/domains/gmiu.edu.in/public_html/gmiu/question_generator/fetch_questions.php on line 204
+[23-Apr-2025 06:17:11 UTC] PHP Fatal error:  Uncaught DivisionByZeroError: Modulo by zero in /home/u977112581/domains/gmiu.edu.in/public_html/gmiu/question_generator/fetch_questions.php:267
+Stack trace:
+#0 {main}
+  thrown in /home/u977112581/domains/gmiu.edu.in/public_html/gmiu/question_generator/fetch_questions.php on line 267

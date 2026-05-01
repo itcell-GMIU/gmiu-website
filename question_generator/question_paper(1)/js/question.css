@@ -1,0 +1,68 @@
+/* CSS styles for the preview table */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px; /* Add margin to separate the preview table from the main table */
+}
+.duplicate-seq {
+    border: 2px solid red;
+    background: #ffe0e0;
+}
+.table th,
+.table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  text-align: left;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table tbody tr:hover {
+  background-color: #ddd;
+}
+.table tbody tr.selected-row {
+  background-color: #abb0f1;
+}
+input.question_checkbox {
+  width: 50px;
+  height: 20px;
+}
+
+.selected-row {
+  background-color: blue;
+}
+
+.footer-table {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  border-top: 2px solid #ccc;
+  padding: 10px;
+  z-index: 999;
+  border-collapse: collapse;
+  text-align: center;
+}
+.footer-table td {
+  white-space: nowrap; /* prevent wrapping inside a cell */
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+}
+.footer-table th {
+  font-size: 16px;
+  font-weight: bold;
+  background: #e0e0e0;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+.bl-level-row,
+.chapter-row {
+  width: 100%;
+}

@@ -1,0 +1,110 @@
+body{
+overflow-x: hidden;
+}
+
+.container_new {
+    margin: 10px 100px;
+}
+
+.bgChange {
+    background-color: #ba2a21;
+    font-size: 16px;
+    color: rgb(255, 252, 252);
+}
+
+.sub_heading {
+    background-color: #616161;
+    color: white;
+}
+
+#profile_img {
+    width: 145px;
+    float: right;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+th {
+    font-weight: bold;
+}
+
+td,
+th {
+    padding: 6px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+#final_submit{
+    margin-top: 55px;
+}
+
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
+
+    .container_new {
+        margin: 10px 50px;
+        font-size: xx-small;
+    }
+
+    .bgChange {
+        background-color: #ba2a21;
+        font-size: 16px;
+        color: rgb(255, 252, 252);
+    }
+
+    .sub_heading {
+        background-color: rgb(231, 231, 231);
+    }
+
+    table,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    td.sub_heading {
+        background-color: #616161;
+        color: white;
+    }
+
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        border: 1px solid #ccc;
+    }
+
+    td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    thead {
+        display: none
+    }
+
+    table thead.mobile-head {
+        display: table-header-group;
+        font-size: 14px;
+    }
+}

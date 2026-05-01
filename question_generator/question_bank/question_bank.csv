@@ -1,0 +1,50 @@
+unit_no,mcq_question,mcq_choice_a,mcq_choice_b,mcq_choice_c,mcq_choice_d,total_mark
+1,What does APK stand for?,Android Package Kit,Application Program Key,Android Programming Kernel,Application Packaging Kit,1
+1,Which programming language is primarily used for Android?,Java,Python,Swift,C#,1
+1,Which company developed Android?,Apple,Google,Microsoft,Samsung,1
+1,Which file stores Android app resources?,res.apk,assets.zip,resources.arsc,res.xml,1
+1,Which OS is Android based on?,Windows,Linux,MacOS,Unix,1
+1,Which layout arranges items in a single column or row?,RelativeLayout,LinearLayout,ConstraintLayout,TableLayout,2
+1,Which Android component is used for background tasks?,Activity,Service,Broadcast,ContentProvider,1
+1,Which extension do Android libraries have?,.apk,.aar,.dex,.lib,1
+2,What is the main file for app entry in Android?,AndroidManifest.xml,MainActivity.java,activity_main.xml,build.gradle,1
+2,Which database is used in Android?,MySQL,PostgreSQL,SQLite,Oracle,1
+2,Which folder contains layout XML files?,src/,layout/,res/layout/,drawable/,1
+2,Which file contains Gradle dependencies?,AndroidManifest.xml,build.gradle,gradle.properties,gradlew,1
+2,Which language is officially supported for Android?,Kotlin,PHP,Ruby,Go,1
+2,What is ADB used for?,App Debugging,App Deployment,Android Development,All of these,2
+2,Which Android version introduced Material Design?,KitKat,Lollipop,Oreo,Marshmallow,1
+2,Which tool is used for Android UI design?,Eclipse,Android Studio,NetBeans,IntelliJ IDEA,1
+2,Which permission is needed for internet access?,INTERNET,ACCESS_WIFI,NETWORK,DATA_ACCESS,1
+2,Which layout is best for complex UI?,LinearLayout,ConstraintLayout,FrameLayout,TableLayout,1
+3,What is an Intent?,Message to OS,Notification,Service,Broadcast,1
+3,Which intent is used to open a URL?,Explicit,Implicit,Pending,Content,1
+3,Which view is used for lists?,RecyclerView,ListView,GridView,All of these,1
+3,Which Android version is API 30?,Pie,Q,R,S,1
+3,What is ANR?,App Not Responding,Android Not Running,Application Network Request,Android Null Reference,1
+3,Which file contains app icons?,icon.png,logo.jpg,app_icon.png,mipmap/,1
+3,Which Android class handles database?,SQLiteHelper,SQLiteDatabase,DatabaseHelper,DBHelper,2
+3,Which XML attribute sets text?,android:text,android:label,android:string,android:title,1
+3,Which file contains UI strings?,values.xml,strings.xml,ui.xml,texts.xml,1
+3,Which Android class loads images?,ImageLoader,Glide,Picasso,AsyncImage,1
+3,Which storage is private to the app?,Internal,External,Cloud,Shared,1
+3,What is the extension of compiled Android bytecode?,.java,.class,.dex,.apk,1
+3,Which lifecycle method is called when app is closed?,onStop(),onPause(),onDestroy(),finish(),1
+3,Which type of layout uses constraints?,LinearLayout,ConstraintLayout,RelativeLayout,FrameLayout,1
+4,Which component listens to system events?,Service,BroadcastReceiver,ContentProvider,Activity,1
+4,What is ProGuard used for?,Debugging,Code Optimization,Encryption,Obfuscation,2
+4,Which Android version is API 29?,Oreo,Pie,Q,R,1
+4,Which folder contains drawable images?,/src,/assets,/res/drawable,/images,1
+4,Which format is used for Android vector images?,SVG,PNG,XML,JPG,1
+4,What is the main thread in Android?,Worker Thread,UI Thread,Main Process,Service Thread,1
+4,Which layout arranges items in a grid?,LinearLayout,GridLayout,FrameLayout,TableLayout,1
+4,Which file controls app themes?,theme.xml,styles.xml,colors.xml,attrs.xml,1
+4,Which Android version is API 28?,Oreo,Pie,Oreo 8.1,Marshmallow,1
+4,Which folder stores fonts?,fonts/,res/fonts,assets/fonts,resources/fonts,1
+5,What is Firebase used for?,Database,Authentication,Cloud Storage,All of these,1
+5,Which Firebase product handles push notifications?,Firestore,Firebase Messaging,Firebase Auth,Firebase Storage,1
+5,Which Google library is used for maps?,Maps API,Google Maps SDK,GeoAPI,LocationKit,1
+5,Which feature allows offline data sync in Firebase?,Realtime Database,Offline Cache,Sync Manager,LocalStorage,1
+5,Which Firebase database is NoSQL?,Realtime Database,Cloud SQL,PostgreSQL,BigQuery,1
+5,Which Firebase product is for hosting?,Firebase Hosting,Firebase Cloud,Firebase Serve,App Hosting,1
+5,Which Firebase feature is for analytics?,Google Analytics,Firebase Analytics,App Stats,Usage Tracker,1

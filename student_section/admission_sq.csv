@@ -1,0 +1,6 @@
+faculty_id,level_id,program_id,semester,admission_quota,mode,first_name,middle_name,last_name,email,mobile_number,admission_year,password,status,admission_status,account_office_status,step,basic_detail_status,payment_detail_status,education_detail_status,document_detail_status,token_amount,payment_status,payment_mode,created_by,updated_by
+1,1,3,1,sq,regular,Jainam,Dharmendra,Patluwala,jainam.patluwala@gmail.com,7878114114,2023,gmiu@1,pending,pending,pending,1,0,1,0,0,10000,pending,offline,37,37
+1,1,2,1,sq,regular,Jainam,test,test,test@gmail.com,7878112112,2023,gmiu@2,pending,pending,pending,1,0,1,0,0,20000,pending,offline,37,37
+2,1,119,1,sq,regular,Jainam,dsdas,sadsad,sd@gmiu.edu.in,7878111111,2023,gmiu@3,pending,pending,pending,1,0,1,0,0,20000,pending,offline,37,37
+2,1,119,1,sq,regular,Jainam,Dharmendra,fdsfds,test@gmiu.edu.in,7878111123,2023,gmiu@4,pending,pending,pending,1,0,1,0,0,20000,pending,offline,37,37
+2,1,119,1,sq,regular,test,test,test,test@gmiusdsad.in,7878200200,2023,gmiu@5,pending,pending,pending,1,0,1,0,0,20000,pending,offline,37,37

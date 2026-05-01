@@ -1,0 +1,4 @@
+name,mobile_number,email,role,password
+John Doe,9876543210,john.doe@example.com,13,password123
+Jane Smith,8765432109,jane.smith@example.com,13,password456
+Peter Jones,7654321098,peter.jones@example.com,13,password789

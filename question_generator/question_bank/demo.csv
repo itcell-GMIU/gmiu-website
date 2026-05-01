@@ -1,0 +1,7 @@
+chapter,question,marks,co_level,bl_level
+1,"What is the capital of France? <img>france_flag.jpeg</img>",5,co1,R
+1,"What is the chemical symbol for water? <img>water_molecule.jpeg</img>",5,co2,U
+2,"What is the formula for calculating the area of a circle? <img>circle_formula.jpeg</img>",10,co3,A
+2,"Analyze the impact of global warming on polar ice caps. <img>polar_ice.jpeg</img>",15,co4,N
+3,"Compare and contrast the characteristics of a plant cell and an animal cell. <img>plant_cell.jpeg</img>",20,co5,E
+3,"Design a new experiment to test the hypothesis. <img>experiment_setup.jpeg</img>",25,co6,C
